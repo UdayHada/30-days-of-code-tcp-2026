@@ -1,0 +1,188 @@
+<!-- Objective:
+ 	Develop a single HTML page that demonstrates your understanding of tables and basic HTML forms.
+	File to Create: event.html
+Section 1 — Event Schedule (Tables)
+	Create a table representing the event timetable.
+	Your table must include:
+		1.A title for the page <h1>
+
+
+		2.<table> with border attribute or equivalent approach
+
+
+		3.<thead> for headings (Time / Activity / Venue)
+
+
+		4.<tbody> with at least 3 rows of event details
+
+Section 2 — Registration Form (Forms & Inputs)
+	Create a registration form for participants to sign up for the event.
+Your form must include:
+1.<form> with method and action attributes
+2.<label> correctly paired with form fields using for and id                                                                                                            
+3.The following input types:
+	1.text
+	2.email
+	3.number
+	4.date (optional alternative if needed)
+	5.radio (minimum 3 options for ticket type)
+	6.checkbox (minimum 3 selectable workshop preferences)
+4.<textarea> for comments
+5.A submit button using <button type="submit"> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon event details and form to register</title>
+</head>
+
+<body>
+    <header><h1 align="center">CodeUtsava Workshop 2026</h1></header>
+
+
+<hr >
+<table border="1" align="center">
+<thead>
+<tr>
+<td>Time</td>
+<td>Venue</td>
+<td>Activity</td>
+</tr>
+
+
+</thead>
+<tbody>
+<tr>
+    <td></td>
+    <td></td>
+    <td></td>
+
+</tr>
+<tr>
+    <td></td>
+
+    <td></td>
+
+    <td></td>
+
+</tr>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+
+
+</tbody> -->
+
+
+
+
+<!-- </table>
+
+</body>
+</html> -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon event details and form to register</title>
+</head>
+
+<body>
+    <header><h1 align="center">CodeUtsava Workshop 2026</h1></header>
+
+
+<hr>
+<table border="1" align="center">
+<thead>
+<tr>
+<th>Time</th>
+<th>Activity</th>
+<th>Venue</th>
+</tr>
+
+
+</thead>
+        <tbody>
+            <tr>
+     <td>09:00 AM</td> <td>Opening Ceremony</td>
+                <td>Hira Hall</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>Technical Workshop</td>
+                <td>CCC</td>
+            </tr>
+            <tr>
+                <td>02:00 PM</td>
+                <td>Guest Speaker Session</td>
+                <td>Hira Hall</td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <h2>Participant Registration Form</h2>
+
+    <form action="form.html" method="post">
+
+        
+        <label for="1">Name:</label><br>
+        <input type="text" id="1" name="name" >
+<br><br>
+        
+        <label for="2">Email Address:</label><br>
+        <input type="email" id="2" name="email"  >
+        
+        <br><br>
+
+        
+        <label for="3">Age:</label><br>
+        <input type="number" id="3" name="age" min="18"  max="100" ><br><br>
+
+        
+        <label for="4">Preferred Event Date:</label><br>
+        <input type="date" id="4" name="eventdate"><br><br>
+
+        
+        <p>Ticket Type:</p>
+        <input type="radio" id="5" name="ticket" value="student" required >
+     <label for="5">Student</label><br>
+        <input type="radio" id="6" name="ticket" value="professor" >
+        <label for="6">professor</label><br>
+
+        <input type="radio" id="7" name="ticket" value="volunteer" >
+        <label for="7">Volunteer</label>   <br>
+        
+        <br>
+
+        
+             <p>Workshop Preferences:</p>
+        <input type="checkbox" id="8" name="workshop" value="web" >
+        <label for="8">Web Development</label>   <br>
+
+        <input type="checkbox" id="9" name="workshop" value="DSA" >
+        <label for="9">Data Structures and Algorithms</label>
+        
+        <br>
+
+        <input type="checkbox" id="10" name="workshop" value="APP" >
+        <label for="10">App development</label><br><br>
+
+        
+        <label for="11">Additional Comments:</label><br>
+        <textarea id="11" name="comments" rows="5" cols="40"></textarea><br><br>
+
+        
+        <button type="submit">Register</button>
+
+    </form>
+
+</body>
+</html>
+
